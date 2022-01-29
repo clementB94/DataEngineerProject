@@ -1,0 +1,393 @@
+Team,Match_played,Won,Drawn,Lost,Goal,Goal_against,Diff,Pts
+Chelsea,15,12,3,0,36,10,+26,39
+Arsenal,15,11,1,3,30,13,+17,34
+Eint Frankfurt,14,9,4,1,30,14,+16,31
+Valencia,8,5,1,2,14,10,+4,16
+Villarreal,12,5,5,2,20,13,+7,20
+Slavia Prague,12,5,3,4,17,14,+3,18
+Benfica,6,3,1,2,9,6,+3,10
+Napoli,6,3,0,3,9,7,+2,9
+RB Salzburg,10,8,0,2,25,12,+13,24
+Dinamo Zagreb,10,6,2,2,16,8,+8,20
+Sevilla,10,6,1,3,26,12,+14,19
+Rennes,10,5,1,4,16,16,0,16
+Krasnodar,10,4,3,3,11,12,-1,15
+Dynamo Kyiv,10,4,3,3,13,17,-4,15
+Zenit,10,4,2,4,11,12,-1,14
+Inter,4,2,1,1,5,1,+4,7
+Leverkusen,8,4,3,1,17,10,+7,15
+Sporting CP,8,4,2,2,14,5,+9,14
+Betis,8,3,4,1,11,8,+3,13
+Genk,8,3,3,2,15,12,+3,12
+BATE Borisov,8,4,0,4,10,12,-2,12
+Olympiacos,8,3,2,3,13,9,+4,11
+Fenerbahçe,8,3,2,3,9,10,-1,11
+Zürich,8,3,1,4,8,11,-3,10
+Rapid Wien,8,3,1,4,6,14,-8,10
+Malmö,8,2,3,3,8,11,-3,9
+Lazio,8,3,0,5,9,14,-5,9
+Celtic,8,3,0,5,6,11,-5,9
+Viktoria Plzeň,2,1,0,1,2,4,-2,3
+Club Brugge,2,1,0,1,2,5,-3,3
+Galatasaray,2,0,1,1,1,2,-1,1
+Shakhtar,2,0,1,1,3,6,-3,1
+Milan,6,3,1,2,12,9,+3,10
+Standard Liège,6,3,1,2,7,9,-2,10
+Astana FK,6,2,2,2,7,7,0,8
+RB Leipzig,6,2,1,3,9,8,+1,7
+Bordeaux,6,2,1,3,6,6,0,7
+Apollon,6,2,1,3,10,10,0,7
+Beşiktaş,6,2,1,3,9,11,-2,7
+Vidi,6,2,1,3,5,7,-2,7
+Spartak Trnava,6,2,1,3,4,7,-3,7
+Rangers,6,1,3,2,8,8,0,6
+FC Copenhagen,6,1,2,3,3,5,-2,5
+Jablonec,6,1,2,3,6,8,-2,5
+Spartak Moscow,6,1,2,3,8,12,-4,5
+Sarpsborg 08,6,1,2,3,8,13,-5,5
+AÉK Lárnaka,6,1,2,3,6,12,-6,5
+Ludogorets,6,0,4,2,5,7,-2,4
+Anderlecht,6,0,3,3,2,7,-5,3
+PAOK,6,1,0,5,5,12,-7,3
+Vorskla Poltava,6,1,0,5,4,13,-9,3
+Qarabağ Ağdam,6,1,0,5,2,13,-11,3
+Marseille,6,0,1,5,6,16,-10,1
+Rosenborg,6,0,1,5,4,14,-10,1
+Akhisarspor,6,0,1,5,4,14,-10,1
+F91 Dudelange,6,0,1,5,3,16,-13,1
+Atlético Madrid,9,7,1,1,20,4,+16,22
+Marseille,15,7,2,6,19,15,+4,23
+Arsenal,14,8,3,3,30,12,+18,27
+RB Salzburg,14,7,5,2,21,12,+9,26
+Lazio,12,7,2,3,26,17,+9,23
+Sporting CP,6,3,1,2,9,8,+1,10
+RB Leipzig,6,3,1,2,9,10,-1,10
+CSKA Moscow,6,2,2,2,7,9,-2,8
+Zenit,10,6,2,2,22,9,+13,20
+Lyon,10,6,2,2,18,8,+10,20
+Viktoria Plzeň,10,6,1,3,18,11,+7,19
+Milan,10,5,2,3,18,11,+7,17
+Loko Moscow,10,5,2,3,14,14,0,17
+Dynamo Kyiv,10,4,4,2,18,14,+4,16
+Athletic Club,10,4,2,4,14,13,+1,14
+Dortmund,4,1,2,1,5,5,0,5
+Atalanta,8,4,3,1,17,8,+9,15
+Östersund,8,4,2,2,10,8,+2,14
+Real Sociedad,8,4,1,3,19,10,+9,13
+Braga,8,4,1,3,10,11,-1,13
+FCSB,8,4,1,3,11,12,-1,13
+Villarreal,8,3,2,3,11,10,+1,11
+FC Astana,8,3,2,3,14,13,+1,11
+AEK Athens,8,1,7,0,7,6,+1,10
+Red Star,8,2,4,2,3,3,0,10
+Nice,8,3,0,5,14,11,+3,9
+FC Copenhagen,8,2,3,3,8,8,0,9
+Ludogorets,8,2,3,3,7,9,-2,9
+Partizan,8,2,3,3,9,12,-3,9
+Napoli,2,1,0,1,3,3,0,3
+Spartak Moscow,2,1,0,1,3,4,-1,3
+Celtic,2,1,0,1,1,3,-2,3
+Sheriff Tiraspol,6,2,3,1,4,4,0,9
+Lugano,6,3,0,3,9,11,-2,9
+Slavia Prague,6,2,2,2,6,6,0,8
+Başakşehir,6,2,2,2,7,8,-1,8
+Rijeka,6,2,1,3,11,12,-1,7
+Zulte Waregem,6,2,1,3,8,13,-5,7
+Young Boys,6,1,3,2,7,8,-1,6
+Köln,6,2,0,4,7,8,-1,6
+Konyaspor,6,1,3,2,4,6,-2,6
+Zorya Luhansk,6,2,0,4,3,9,-6,6
+Hertha BSC,6,1,2,3,6,7,-1,5
+Hoffenheim,6,1,2,3,8,10,-2,5
+Vitória,6,1,2,3,5,9,-4,5
+Skënderbeu Korçë,6,1,2,3,6,10,-4,5
+Vitesse,6,1,2,3,5,10,-5,5
+Rosenborg,6,1,2,3,6,11,-5,5
+Austria Wien,6,1,2,3,9,16,-7,5
+BATE Borisov,6,1,2,3,6,16,-10,5
+Be'er Sheva,6,1,1,4,5,10,-5,4
+Maccabi Tel Aviv,6,1,1,4,1,8,-7,4
+Everton,6,1,1,4,7,15,-8,4
+Apollon Limassol,6,0,3,3,5,14,-9,3
+Fastav Zlín,6,0,2,4,1,10,-9,2
+FK Vardar,6,0,1,5,3,20,-17,1
+Manchester Utd,15,10,3,2,25,8,+17,33
+Ajax,15,8,3,4,24,17,+7,27
+Celta Vigo,14,6,5,3,21,14,+7,23
+Lyon,8,5,0,3,23,14,+9,15
+Schalke 04,12,7,3,2,19,11,+8,24
+Anderlecht,12,6,3,3,23,14,+9,21
+Genk,12,6,3,3,25,18,+7,21
+Beşiktaş,6,4,1,1,13,7,+6,13
+Roma,10,5,3,2,24,13,+11,18
+APOEL FC,10,5,0,5,12,11,+1,15
+Olympiacos,10,3,4,3,12,11,+1,13
+Gent,10,3,4,3,15,21,-6,13
+Krasnodar,10,3,2,5,11,13,-2,11
+FC Copenhagen,4,2,1,1,4,4,0,7
+Rostov,4,1,2,1,6,3,+3,5
+M'Gladbach,4,1,2,1,7,6,+1,5
+Saint-Étienne,38,12,14,12,41,42,-1,50
+Shakhtar,8,7,0,1,22,7,+15,21
+Zenit,8,6,0,2,20,11,+9,18
+Fiorentina,8,5,1,2,18,10,+8,16
+Fenerbahçe,8,4,2,2,9,8,+1,14
+Athletic Club,8,4,1,3,13,15,-2,13
+Sparta Prague,8,4,1,3,9,11,-2,13
+Villarreal,8,3,3,2,10,12,-2,12
+Osmanlıspor,8,3,2,3,10,10,0,11
+PAOK,8,3,2,3,8,10,-2,11
+Astra Giurgiu,8,2,3,3,9,13,-4,9
+Be'er Sheva,8,2,2,4,8,11,-3,8
+AZ Alkmaar,8,2,2,4,8,21,-13,8
+Tottenham,2,0,1,1,2,3,-1,1
+Ludogorets,2,0,1,1,1,2,-1,1
+Legia Warsaw,2,0,1,1,0,1,-1,1
+Mainz 05,6,2,3,1,8,10,-2,9
+Young Boys,6,2,2,2,7,4,+3,8
+Southampton,6,2,2,2,6,4,+2,8
+Standard Liège,6,1,4,1,8,6,+2,7
+RB Salzburg,6,2,1,3,6,6,0,7
+Maccabi Tel Aviv,6,2,1,3,7,9,-2,7
+Feyenoord,6,2,1,3,3,7,-4,7
+Qarabağ FK,6,2,1,3,7,12,-5,7
+Rapid Wien,6,1,3,2,7,8,-1,6
+Zürich,6,1,3,2,5,7,-2,6
+Braga,6,1,3,2,9,11,-2,6
+Steaua,6,1,3,2,5,7,-2,6
+Viktoria Plzeň,6,1,3,2,7,10,-3,6
+Inter,6,2,0,4,7,11,-4,6
+Nice,6,2,0,4,5,11,-6,6
+Sassuolo,6,1,2,3,9,11,-2,5
+Austria Wien,6,1,2,3,11,14,-3,5
+FC Astana,6,1,2,3,5,11,-6,5
+Dundalk FC,6,1,1,4,5,8,-3,4
+Slovan Liberec,6,1,1,4,7,12,-5,4
+Zorya Luhansk,6,0,2,4,2,8,-6,2
+Konyaspor,6,0,1,5,2,12,-10,1
+Panathinaikos,6,0,1,5,3,13,-10,1
+Gabala FK,6,0,0,6,5,14,-9,0
+Sevilla,9,5,2,2,17,8,+9,17
+Liverpool,15,6,7,2,19,13,+6,25
+Villarreal,14,9,3,2,23,13,+10,30
+Shakhtar,8,5,2,1,16,7,+9,17
+Dortmund,16,11,2,3,39,16,+23,35
+Athletic Club,16,9,3,4,28,17,+11,30
+Sparta Prague,14,7,5,2,27,16,+11,26
+Braga,12,6,2,4,16,15,+1,20
+Fenerbahçe,12,6,4,2,16,11,+5,22
+Lazio,10,5,4,1,18,12,+6,19
+Tottenham,10,5,2,3,17,12,+5,17
+Basel,10,5,2,3,14,12,+2,17
+Anderlecht,10,5,1,4,12,11,+1,16
+Valencia,4,3,0,1,12,2,+10,9
+Leverkusen,4,2,1,1,4,3,+1,7
+Manchester Utd,4,1,1,2,7,6,+1,4
+Krasnodar,12,6,3,3,19,12,+7,21
+Napoli,8,6,1,1,23,5,+18,19
+Saint-Étienne,12,5,4,3,20,14,+6,19
+Molde,10,5,2,3,14,13,+1,17
+Schalke 04,8,4,3,1,15,6,+9,15
+Rapid Wien,8,5,0,3,10,16,-6,15
+Midtjylland,10,4,2,4,11,19,-8,14
+Marseille,8,4,1,3,13,9,+4,13
+Loko Moscow,8,3,3,2,13,10,+3,12
+Fiorentina,8,3,2,3,12,10,+2,11
+Augsburg,8,3,1,4,12,12,0,10
+Sporting CP,8,3,1,4,15,15,0,10
+Sion,8,2,4,2,8,9,-1,10
+Galatasaray,2,0,1,1,2,4,-2,1
+Olympiacos,2,0,0,2,1,3,-2,0
+Porto,2,0,0,2,0,3,-3,0
+Legia Warsaw,12,7,1,4,16,12,+4,22
+Rosenborg,14,6,3,5,19,16,+3,21
+Slovan Liberec,10,6,1,3,13,9,+4,19
+PAOK,12,4,6,2,18,7,+11,18
+Rubin Kazan,10,3,5,2,12,10,+2,14
+Dinamo Minsk,12,4,2,6,12,15,-3,14
+Gabala FK,14,3,5,6,11,18,-7,14
+Bordeaux,10,3,4,3,11,9,+2,13
+AZ Alkmaar,10,4,1,5,16,17,-1,13
+Belenenses,10,3,4,3,5,9,-4,13
+Ajax,8,2,5,1,7,6,+1,11
+Lech Poznań,8,3,2,3,6,6,0,11
+Viktoria Plzeň,8,3,1,4,13,10,+3,10
+Qarabağ FK,8,3,1,4,8,8,0,10
+Beşiktaş,6,2,3,1,7,6,+1,9
+Partizan,6,3,0,3,10,14,-4,9
+Dnipro,6,2,1,3,6,8,-2,7
+Monaco,6,1,3,2,5,9,-4,6
+Club Brugge,6,1,2,3,4,11,-7,5
+Asteras Tripoli,6,1,1,4,4,12,-8,4
+Celtic,6,0,3,3,8,12,-4,3
+Skënderbeu Korçë,6,1,0,5,4,13,-9,3
+APOEL FC,6,1,0,5,3,12,-9,3
+Groningen,6,0,2,4,2,8,-6,2
+Sevilla,15,11,3,1,29,14,+15,36
+Dnipro,17,7,5,5,17,14,+3,26
+Napoli,14,8,4,2,26,9,+17,28
+Fiorentina,14,7,4,3,21,12,+9,25
+Club Brugge,16,11,4,1,29,7,+22,37
+Dynamo Kyiv,12,7,1,4,23,14,+9,22
+Wolfsburg,12,6,3,3,24,18,+6,21
+Zenit,6,3,1,2,9,5,+4,10
+Dynamo Mosc,14,9,4,1,20,12,+8,31
+Torino,14,8,4,2,23,9,+14,28
+Villarreal,12,7,2,3,29,14,+15,23
+Inter,12,6,4,2,21,10,+11,22
+Everton,10,6,2,2,21,11,+10,20
+Beşiktaş,10,4,3,3,14,11,+3,15
+Ajax,4,3,0,1,6,2,+4,9
+Roma,4,1,2,1,4,6,-2,5
+Young Boys,12,7,1,4,21,15,+6,22
+Legia Warsaw,10,7,0,3,10,6,+4,21
+PSV Eindhoven,12,6,2,4,15,14,+1,20
+M'Gladbach,10,5,3,2,26,10,+16,18
+Tottenham,10,5,3,2,15,8,+7,18
+Feyenoord,10,5,2,3,17,13,+4,17
+RB Salzburg,8,5,1,2,23,13,+10,16
+Trabzonspor,10,4,2,4,10,11,-1,14
+Guingamp,8,4,1,3,10,10,0,13
+Celtic,8,2,3,3,13,15,-2,9
+Aalborg,8,3,0,5,6,16,-10,9
+Liverpool,2,1,0,1,1,1,0,3
+Athletic Club,2,0,1,1,4,5,-1,1
+Anderlecht,2,0,1,1,1,3,-2,1
+Sporting CP,2,0,1,1,0,2,-2,1
+Olympiacos,2,0,1,1,2,4,-2,1
+Rijeka,12,8,1,3,23,10,+13,25
+Krasnodar,12,6,3,3,27,14,+13,21
+Dinamo Minsk,12,6,2,4,14,16,-2,20
+Asteras Tripoli,12,4,4,4,18,18,0,16
+Sparta Prague,8,4,2,2,15,8,+7,14
+Lokeren,8,4,1,3,6,6,0,13
+Astra Giurgiu,10,4,1,5,14,19,-5,13
+Dinamo Zagreb,8,4,0,4,17,17,0,12
+Zürich,8,3,2,3,14,16,-2,11
+Rio Ave,10,3,2,5,8,12,-4,11
+PAOK,8,3,1,4,14,8,+6,10
+HJK,8,3,1,4,10,15,-5,10
+Saint-Étienne,8,1,5,2,3,4,-1,8
+Panathinaikos,8,2,2,4,12,13,-1,8
+Qarabağ FK,8,1,5,2,4,6,-2,8
+Partizan,8,2,2,4,6,12,-6,8
+Steaua,6,2,1,3,11,9,+2,7
+Apollon Limassol,8,2,1,5,9,20,-11,7
+Estoril,6,1,2,3,7,8,-1,5
+Standard Liège,6,1,1,4,4,10,-6,4
+Metalist Kharkiv,8,1,1,6,4,10,-6,4
+Lille,6,0,4,2,3,9,-6,4
+FC Copenhagen,6,1,1,4,5,13,-8,4
+ŠK Slovan Bratislava,6,0,0,6,1,20,-19,0
+Sevilla,19,9,7,3,40,16,+24,34
+Benfica,9,4,5,0,14,4,+10,17
+Valencia,14,6,5,3,26,13,+13,23
+Juventus,8,4,3,1,10,4,+6,15
+AZ Alkmaar,14,6,6,2,14,11,+3,24
+Lyon,12,4,5,3,13,9,+4,17
+Basel,6,2,3,1,8,6,+2,9
+Porto,6,2,3,1,10,11,-1,9
+RB Salzburg,12,9,3,0,29,6,+23,30
+Fiorentina,12,7,5,0,19,9,+10,26
+Tottenham,12,7,3,2,29,9,+20,24
+Betis,12,5,6,1,16,6,+10,21
+Ludogorets,10,6,2,2,15,9,+6,20
+Anzhi,10,3,4,3,6,8,-2,13
+Viktoria Plzeň,4,1,2,1,6,7,-1,5
+Napoli,4,0,3,1,5,4,+1,3
+Trabzonspor,14,8,5,1,26,13,+13,29
+Rubin Kazan,14,7,7,0,28,10,+18,28
+Eint Frankfurt,10,6,3,1,22,10,+12,21
+Slovan Liberec,14,5,6,3,20,16,+4,21
+Chornomorets,14,6,3,5,13,11,+2,21
+Genk,10,5,5,0,17,9,+8,20
+Dnipro,10,6,1,3,18,9,+9,19
+Esbjerg,10,6,1,3,15,15,0,19
+Swansea City,12,4,4,4,17,10,+7,16
+Dynamo Kyiv,10,4,3,3,19,12,+7,15
+Lazio,8,3,4,1,11,8,+3,13
+PAOK,8,3,3,2,10,10,0,12
+Maccabi Tel Aviv,8,3,3,2,7,8,-1,12
+NK Maribor,8,2,2,4,12,16,-4,8
+Shakhtar,2,0,2,0,2,3,-1,2
+Ajax,2,0,0,2,1,6,-5,0
+Rijeka,12,4,6,2,17,12,+5,18
+Maccabi Haifa,12,4,5,3,22,10,+12,17
+Kuban,10,4,4,2,13,8,+5,16
+Rapid Wien,10,3,5,2,16,12,+4,14
+Thun,12,4,2,6,14,13,+1,14
+Standard Liège,12,3,4,5,21,18,+3,13
+Estoril,10,3,4,3,10,9,+1,13
+Tromsø,14,4,1,9,9,17,-8,13
+Pandurii,12,2,5,5,12,14,-2,11
+Zulte Waregem,8,3,2,3,7,12,-5,11
+St. Gallen,8,3,1,4,11,16,-5,10
+Sheriff Tiraspol,8,1,5,2,8,8,0,8
+Elfsborg,8,2,2,4,7,11,-4,8
+PSV Eindhoven,6,2,1,3,4,5,-1,7
+Apollon Limassol,8,2,1,5,7,11,-4,7
+APOEL FC,8,1,4,3,5,11,-6,7
+Freiburg,6,1,3,2,5,8,-3,6
+Vitória,6,1,2,3,6,5,+1,5
+Wigan Athletic,6,1,2,3,6,7,-1,5
+Bordeaux,6,1,0,5,4,10,-6,3
+Legia Warsaw,6,1,0,5,2,8,-6,3
+Paços,6,0,3,3,1,8,-7,3
+Shakhter,6,0,2,4,5,10,-5,2
+Dinamo Zagreb,6,0,1,5,3,11,-8,1
+Chelsea,9,4,3,2,17,10,+7,15
+Benfica,9,4,3,2,15,9,+6,15
+Fenerbahçe,14,7,5,2,18,12,+6,26
+Basel,14,4,6,4,18,15,+3,18
+Lazio,14,5,8,1,25,10,+15,23
+Rubin Kazan,12,5,6,1,18,9,+9,21
+Tottenham,12,4,7,1,19,14,+5,19
+Newcastle Utd,14,3,9,2,13,10,+3,18
+Anzhi,16,10,3,3,26,8,+18,33
+Viktoria Plzeň,16,7,6,3,31,9,+22,27
+Inter,14,7,5,2,27,17,+10,26
+Levante,12,6,4,2,17,7,+10,22
+Steaua,14,6,4,4,21,15,+6,22
+Bordeaux,12,4,6,2,17,12,+5,18
+Stuttgart,12,4,4,4,16,13,+3,16
+Zenit,4,1,1,2,4,5,-1,4
+Hannover 96,12,5,6,1,28,16,+12,21
+Genk,12,5,6,1,17,11,+6,21
+Metalist Kharkiv,10,5,4,1,13,5,+8,19
+Liverpool,12,5,4,3,20,13,+7,19
+Dnipro,10,5,3,2,23,15,+8,18
+Lyon,8,5,2,1,16,11,+5,17
+Sparta Prague,12,3,7,2,18,12,+6,16
+Atlético Madrid,8,5,0,3,8,6,+2,15
+Leverkusen,8,4,1,3,10,5,+5,13
+M'Gladbach,8,3,3,2,14,11,+3,12
+Napoli,8,3,0,5,12,17,-5,9
+Ajax,2,1,0,1,2,2,0,3
+BATE Borisov,2,0,1,1,0,1,-1,1
+Dynamo Kyiv,2,0,1,1,1,2,-1,1
+Olympiacos,2,0,1,1,0,4,-4,1
+CFR Cluj,2,0,1,1,0,5,-5,1
+Twente,14,5,6,3,29,15,+14,21
+Young Boys,12,5,3,4,21,17,+4,18
+Rosenborg,14,4,6,4,19,16,+3,18
+Videoton,12,4,4,4,11,9,+2,16
+Marítimo,10,3,5,2,8,7,+1,14
+AIK Stockholm,12,4,2,6,12,17,-5,14
+Athletic Club,10,3,3,4,20,15,+5,12
+Molde,8,4,0,4,10,9,+1,12
+PSV Eindhoven,8,3,2,3,22,7,+15,11
+Marseille,10,2,5,3,15,13,+2,11
+Club Brugge,8,2,2,4,13,12,+1,8
+FC Copenhagen,6,2,2,2,5,6,-1,8
+Hapoel Tel Aviv,8,2,2,4,11,12,-1,8
+Sporting CP,8,1,4,3,10,11,-1,7
+Neftchi PFK,8,1,4,3,8,10,-2,7
+Académica,6,1,2,3,6,9,-3,5
+Rapid Wien,10,1,2,7,11,18,-7,5
+Panathinaikos,6,1,2,3,4,11,-7,5
+Helsingborg,6,1,1,4,9,12,-3,4
+NK Maribor,6,1,1,4,6,10,-4,4
+Udinese,6,1,1,4,7,12,-5,4
+Partizan,8,0,4,4,6,11,-5,4
+AEL Limassol,6,1,1,4,4,10,-6,4
+Kiryat Shmona,6,0,2,4,6,13,-7,2

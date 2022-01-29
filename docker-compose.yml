@@ -1,0 +1,19 @@
+services:
+  app:
+    build: .
+    command: python -u app.py
+    ports:
+      - '5000:5000'
+    volumes:
+      - .:/app
+    links:
+      - db
+  db:
+    image: mongo
+    hostname: mongodb
+    environment:
+      - MONGO_INITDB_DATABASE=football_db
+    volumes:
+      - ./data/mongo:/data/db
+    ports:
+      - '27017:27017'

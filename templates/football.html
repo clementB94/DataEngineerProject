@@ -1,0 +1,72 @@
+<html>
+<head>  
+  <style>
+    h1 {
+      text-align: center;
+    }
+  </style>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+      function cb(selection1, selection2) {
+        const league = ["ligue1", "premiereleague", "laliga", "bundesliga", "seria", "championsleague", "europaleague"];
+        if (league.includes(selection1)){
+          $.getJSON({
+              url: "/callback", data: {'data': selection1, 'range': selection2}, success: function (result) {
+                  Plotly.newPlot('chart', result, {staticPlot: true});;
+              }
+          });
+      }}
+      function search(player) {
+        $.ajax({
+          url: "/callbacksearch",  data: {'data': player}, success: function (result) {
+              $("#stats").text(result.a+":     "+result.b+" matches played,     "+result.c+" Goals,     "+result.d+
+              " Total started,     "+result.e+" Games selected,     "+result.f+" Sub,     "+result.g+
+              " Minutes played,    "+result.h+" Came on,     "+result.i+ " Assists");
+          }, error: function (result){$("#stats").text(" Error, can't find player")}
+        });
+      }
+  </script>
+</head>
+
+<body style="font-family:montserrat, sans-serif">
+
+  <h1>European Football Stats</h1>
+
+  <h2>Choose a player</h2>
+
+  <input id="searchplayer" type="text" name="searchplayer">
+  <input type="submit" value="search player" onclick="search(document.getElementById('searchplayer').value)">
+  <b id="stats">All time stats</b>
+  <br>
+  <br>
+
+  <h2>Choose a league</h2>
+
+  <p>Make sure you spell it correctly, available leagues : 'ligue1', 'premiereleague', 'bundesliga', 'laliga', 'seria', 'championsleague', 'europaleague'</p>
+
+  <input list="browsers" type="text" id="fname" name="fname" value="ligue1" placeholder="select" onchange="cb(this.value, document.getElementById('slider').value)">
+    <datalist id="browsers">
+      <option value="ligue1">
+      <option value="premiereleague"> 
+      <option value="laliga">
+      <option value="bundesliga">
+      <option value="seria">
+      <option value="championsleague">
+      <option value="europaleague"></option>
+    </datalist>
+  <a href = "javascript:;" onclick = "this.href='/getPlotCSV/' + document.getElementById('fname').value">Click here to download csv file.</a>
+  <a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; you can choose the range : </a>
+  <input id="slider" type="range" value="20" min="10" max="30" oninput="this.nextElementSibling.value = this.value" onchange="cb(document.getElementById('fname').value, this.value)">
+  <output>20</output>
+  <div id="chart" class="chart"></div>
+  
+</body>
+
+<script>
+  d = {{ graphJSON | safe }};
+  //d.config={staticPlot: true};
+  Plotly.newPlot('chart', d, {});
+  
+</script>
+</html>
