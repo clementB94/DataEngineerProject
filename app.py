@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import json
 
-from real_time_scrapping import rt_scrap
+from real_time_scraping import rt_scrap
 from insert_db import insert_db
 
 app = Flask(__name__)
