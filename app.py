@@ -30,7 +30,7 @@ def redirect_to_base():
 
 @app.route('/callback', methods=['POST', 'GET'])
 def cb():
-    # callback so that the graphs are updated
+    # callback so that the league graphs are updated
     return get_strongest_club(request.args.get('data'), int(request.args.get('range')))
 
 @app.route('/callbacksearch', methods=['POST', 'GET'])
@@ -41,16 +41,16 @@ def search():
 
 @app.route('/football')
 def render():
-    # render a html file with a graph
+    # render the main html file with a graph
     return render_template("football.html", graphJSON=get_strongest_club())
 
 @app.route('/getPlotCSV/<ligue>', methods=['POST', 'GET'])
 def dl(ligue):
-    # Download a csv file with all rows in the mongodb document
+    # Download a csv file from a mongodb collection
     if ligue in available_league: 
         db = client['football_db']
         cursor = db[ligue].find()
-        df =  pd.DataFrame(list(cursor)).iloc[: , 1:]
+        df =  pd.DataFrame(list(cursor)).iloc[: , 1:] # remove 1st column which is mongodb's _id
         csv = df.to_csv(index=False)
         response = make_response(csv)
         cd = 'attachment; filename='+ligue+'.csv'
@@ -66,6 +66,7 @@ def dl(ligue):
 def redirection():
     # redirect to the main page
     return redirect("http://localhost:5000/football", code=302)
+
 
 ### Function that take a league and return a figure with plotly graphs (Bar, Scatter and Table)
 
@@ -148,12 +149,12 @@ def get_strongest_club(ligue='ligue1', size=20):
             title_text="Best teams of : " + str(ligue),
         )
 
-        graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
+        graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder) # encode plotly graph object so that he can be displayed in the html file
 
     return graphJSON
 
 
 if __name__ == '__main__':
-    # insert data into the database and run the app
+    # insert data into the mongodb's database and run the app
     insert_db()
     app.run(host='0.0.0.0', port=5000)

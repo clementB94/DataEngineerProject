@@ -1,19 +1,19 @@
 <html>
 <head>  
   <style>
-    h1 {
-      text-align: center;
-    }
+    h1 { text-align: center; }
   </style>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- cb() function take a league and a size and give it to a callback and then update the bar, scatter and table graphs--> 
+  <!-- search() function take a player's name and give it to a callback then it try to search this player via real time scrapping and display stats-->
   <script>
       function cb(selection1, selection2) {
         const league = ["ligue1", "premiereleague", "laliga", "bundesliga", "seria", "championsleague", "europaleague"];
         if (league.includes(selection1)){
           $.getJSON({
-              url: "/callback", data: {'data': selection1, 'range': selection2}, success: function (result) {
-                  Plotly.newPlot('chart', result, {staticPlot: true});;
+              url: "/callback", data: {'data': selection1, 'range': selection2}, success: function (graph) {
+                  Plotly.newPlot('chart', graph, {staticPlot: true});;
               }
           });
       }}

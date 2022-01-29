@@ -42,7 +42,7 @@ def scrap():
 
                     output_file.writerow([Team, Match_played, Won, Drawn, Lost, Goal, Goal_against, Diff, Pts])
 
-    # Champions league
+    # Europa league
 
     output_file = csv.writer(open('data_to_insert/europaleague.csv', 'w', encoding='utf-8'))
 

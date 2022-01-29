@@ -1,8 +1,9 @@
 from bs4 import BeautifulSoup
 import requests
 
-def rt_scrap(player):
+def rt_scrap(player):   
 
+    # search player useing statbunker search engine
     url = "https://www.statbunker.com/usual/search?action=Find&search="+str(player)
     req = requests.get(url)
     src = req.content
@@ -11,6 +12,7 @@ def rt_scrap(player):
 
     result = soup.find_all("a", {"class": "linkGreen"})
 
+    # go to the first result's page
     url = "https://www.statbunker.com"+str(result[0]['href'])
     req = requests.get(url)
     src = req.content
