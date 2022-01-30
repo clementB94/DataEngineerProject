@@ -3,11 +3,13 @@
 
 This is a Web app which retrieve european football's league and player stats, you can select a league then visualize who the best teams are and download the data in csv format or search for a player and display his statitics. 
 
-Avaiable league are french Ligue 1, spanish LaLiga, italian Serie A, german Bundesliga, english Premiere League, Champions League and Europa League.
+Avaiable leagues are french Ligue 1, spanish LaLiga, italian Serie A, german Bundesliga, english Premiere League, Champions League and Europa League.
 
 
 
 # How to use it ?
+
+You need to have Git and Docker
 ```
 git clone https://github.com/clementB94/DataEngineerProject.git
 cd DataEngineerProject
