@@ -21,7 +21,7 @@ Download or clone the project and type "docker-compose up" in your terminal (dow
 
 # Reproductibility
 
-This project is composed in multiple parts, there is the Dockerfile and Docker-compose.yml file which describe the architecture of the project, make the link between the app and the database and install required dependencies.
+This project is composed in multiple parts, there is the Dockerfile and Docker-compose.yml file which describe the architecture of the project, make the link between the app and the database and install required dependencies based on the file requirements.txt
 
 The scrapping.py file has been used to collect europa league and champions league statistics with BeautifullSoup Scrapper.
 
