@@ -1,7 +1,9 @@
 <html>
-<head>  
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>  
   <style>
     h1 { text-align: center; }
+    body { font-family: 'Montserrat'; font-size: 18px;}
   </style>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -29,23 +31,19 @@
   </script>
 </head>
 
-<body style="font-family:montserrat, sans-serif">
+<body>
 
   <h1>European Football Stats</h1>
 
   <h2>Choose a player</h2>
-
-  <input id="searchplayer" type="text" name="searchplayer">
+  <input style="border: none; border:solid 1px #ccc; border-radius: 6px;" id="searchplayer" type="text" name="searchplayer">
   <input type="submit" value="search player" onclick="search(document.getElementById('searchplayer').value)">
-  <b id="stats">All time stats</b>
-  <br>
+  <b style="font-size: 15px;" id="stats">All time stats</b>
   <br>
 
   <h2>Choose a league</h2>
-
   <p>Make sure you spell it correctly, available leagues : 'ligue1', 'premiereleague', 'bundesliga', 'laliga', 'seria', 'championsleague', 'europaleague'</p>
-
-  <input list="browsers" type="text" id="fname" name="fname" value="ligue1" placeholder="select" onchange="cb(this.value, document.getElementById('slider').value)">
+  <input style="border: none; border:solid 1px #ccc; border-radius: 6px;" list="browsers" type="text" id="fname" name="fname" value="ligue1" placeholder="select" onchange="cb(this.value, document.getElementById('slider').value)">
     <datalist id="browsers">
       <option value="ligue1">
       <option value="premiereleague"> 

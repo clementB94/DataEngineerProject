@@ -10,7 +10,7 @@ import json
 from real_time_scraping import rt_scrap
 from insert_db import insert_db
 
-app = Flask(__name__)
+app = Flask(__name__)   
 
 client = MongoClient(host="mongodb", port=27017)
 
@@ -80,6 +80,8 @@ def get_strongest_club(ligue='ligue1', size=20):
         strongest_clubs = db[ligue].aggregate([{"$group" : {"_id" : "$Team",
         "average_goals_by_comps" : {"$avg" : "$Goal"},
         "average_taken_goals_by_comps" : {"$avg" : "$Goal_against"},
+        "total_goals" : {"$sum" : "$Goal"},
+        "total_taken_goals" : {"$sum" : "$Goal_against"},
         "matched_played" : {"$sum" : "$Match_played"},
         "average_points" : {"$avg" : "$Pts"},
         "average_matches_by_comps" : {"$avg" : "$Match_played"} }}])
@@ -87,12 +89,17 @@ def get_strongest_club(ligue='ligue1', size=20):
         # create dataframe and new columns
         df = []
         for x in strongest_clubs:
-            df.append([x['_id'], x['average_goals_by_comps'], x['average_taken_goals_by_comps'], x['average_matches_by_comps'], x['matched_played'], x['average_points']])
-        df = pd.DataFrame(df, columns = ['Club', 'average_goals_by_comps', 'average_taken_goals_by_comps', 'average_matches_by_comps', 'matched_played', 'average_points'])
+            df.append([x['_id'], x['average_goals_by_comps'], x['average_taken_goals_by_comps'], x['average_matches_by_comps'], 
+            x['matched_played'], x['average_points'], x['total_goals'], x['total_taken_goals']])
+        df = pd.DataFrame(df, columns = ['Club', 'average_goals_by_comps', 'average_taken_goals_by_comps', 'average_matches_by_comps', 
+        'matched_played', 'average_points', 'total_goals', 'total_taken_goals'])
+
         df['average_goals'] = df['average_goals_by_comps']/df['average_matches_by_comps']
         df['average_taken_goals'] = df['average_taken_goals_by_comps']/df['average_matches_by_comps']
         df['diff'] = df['average_goals'] - df['average_taken_goals']
+        df['total_diff'] = df['total_goals'] - df['total_taken_goals']
         df = df.sort_values(by=['diff'], ascending=False)
+        df['average_points'] = df['average_points'].round(2)
 
         # create figure
         fig = make_subplots(rows=2, cols=1, vertical_spacing=0.1, specs=[[{"type": "bar"}], [{"type": "table"}]])
@@ -101,18 +108,16 @@ def get_strongest_club(ligue='ligue1', size=20):
         fig.add_trace(go.Scatter(name='Average Goal Diff By Club', x=df['Club'][0:size], y=df['diff'][0:size]), row=1, col=1)
         fig.update_layout(barmode='group')
 
-        fig.add_trace(go.Table(columnwidth=[40, 40, 40, 40, 40],
-                                        header=dict(values=['Club', 'Average Goals', 'Average Taken Goals',
-                                        'Average Goal Difference', 'Average Points by Edition']),
-                                        cells=dict(values=[df.Club[0:size], df.average_goals[0:size],
-                                                           df.average_taken_goals[0:size], df['diff'][0:size],
-                                                           df.average_points[0:size]], format = [None, ",.3f"])), row=2, col=1)
+        fig.add_trace(go.Table(columnwidth=[35, 35, 35, 35, 35],
+                                        header=dict(values=['Club', 'Total Goals', 'Total Taken Goals',
+                                        'Total Goal Difference', 'Average Points by Edition']),
+                                        cells=dict(values=[df.Club[0:size], df.total_goals[0:size],
+                                                           df.total_taken_goals[0:size], df.total_diff[0:size],
+                                                           df.average_points[0:size]])), row=2, col=1)
         fig.update_layout(
             height=1000,
             title_text="Best team of : " + str(ligue),
         )
-
-        graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
 
     else:
 
@@ -120,14 +125,21 @@ def get_strongest_club(ligue='ligue1', size=20):
         strongest_clubs = db[ligue].aggregate([{"$group" : {"_id" : "$HomeTeam",
         "average_goals_by_clubs" : {"$avg" : "$FTHG"},
         "average_taken_goals_by_clubs" : {"$avg" : "$FTAG"},
+        "total_goals_by_clubs" : {"$sum" : "$FTHG"},
+        "total_taken_goals_by_clubs" : {"$sum" : "$FTAG"},
         "average_odds_by_clubs" : {"$avg" : "$BbAvH"} }}])
 
         # create dataframe and new columns
         df = []
         for x in strongest_clubs:
-            df.append([x['_id'], x['average_goals_by_clubs'], x['average_taken_goals_by_clubs'], x['average_odds_by_clubs']])
-        df = pd.DataFrame(df, columns = ['Club', 'Average_Goals_By_Club', 'Average_Taken_Goals_By_Club', 'average_odds_by_clubs'])
+            df.append([x['_id'], x['average_goals_by_clubs'], x['average_taken_goals_by_clubs'], x['average_odds_by_clubs'],
+            x['total_goals_by_clubs'], x['total_taken_goals_by_clubs']])
+        df = pd.DataFrame(df, columns = ['Club', 'Average_Goals_By_Club', 'Average_Taken_Goals_By_Club', 'average_odds_by_clubs',
+        'total_goals_by_clubs', 'total_taken_goals_by_clubs'])
+
         df['diff'] = df['Average_Goals_By_Club'] - df['Average_Taken_Goals_By_Club']
+        df['total_diff'] = df['total_goals_by_clubs'] - df['total_taken_goals_by_clubs']
+        df['average_odds_by_clubs'] = df['average_odds_by_clubs'].round(2)
         df = df.sort_values(by=['diff'], ascending=False)
         
         # create figure
@@ -137,19 +149,20 @@ def get_strongest_club(ligue='ligue1', size=20):
         fig.add_trace(go.Scatter(name='Average Goals Diff By Club', x=df['Club'][0:size], y=df['diff'][0:size]), row=1, col=1)
         fig.update_layout(barmode='group')
 
-        fig.add_trace(go.Table(columnwidth=[45, 45, 45, 45, 45],
-                                        header=dict(values=['Club', 'Average Goals', 'Average Taken Goals',
-                                        'Average Goal Difference', 'Average Odds']),
-                                        cells=dict(values=[df.Club[0:size], df.Average_Goals_By_Club[0:size],
-                                                           df.Average_Taken_Goals_By_Club[0:size], df['diff'][0:size],
-                                                           df.average_odds_by_clubs[0:size]], format = [None, ",.3f"])), row=2, col=1)
+        fig.add_trace(go.Table(columnwidth=[35, 35, 35, 35, 35],
+                                        header=dict(values=['Club', 'Total Goals', 'Total Taken Goals',
+                                        'Total Goal Difference', 'Average Odds']),
+                                        cells=dict(values=[df.Club[0:size], df.total_goals_by_clubs[0:size],
+                                                           df.total_taken_goals_by_clubs[0:size], df.total_diff[0:size],
+                                                           df.average_odds_by_clubs[0:size]])), row=2, col=1)
 
         fig.update_layout(
             height=1000,
             title_text="Best teams of : " + str(ligue),
         )
 
-        graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder) # encode plotly graph object so that he can be displayed in the html file
+    # encode plotly graph object so that he can be displayed in the html file
+    graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
 
     return graphJSON
 
